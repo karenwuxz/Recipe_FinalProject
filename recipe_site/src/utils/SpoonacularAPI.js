@@ -7,7 +7,9 @@ export const getRecipeByIngredients = (ingredients) => {
 }
 
 export const getRecipeByRestrictions = (restrictions) => {
-    return fetch(`https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=1&tags=${restrictions}`)
+    console.log(restrictions);
+    return fetch(`https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=5&tags=${restrictions}`)
         .then(res => res.json())
         .then(data => data);
 }
+

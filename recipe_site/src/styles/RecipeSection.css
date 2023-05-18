@@ -1,0 +1,22 @@
+#recipe-section{
+    width: 100%;
+    text-align: center;
+}
+
+.recipes{
+    padding: 1.5rem;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.menu-btn {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+  
+.menu-btn:hover {
+    cursor: pointer;
+    background-color: seagreen;
+}
+

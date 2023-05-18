@@ -21,8 +21,9 @@ const Menu = (props) => {
                 <div id='homepage-text'>Hungry ?</div>
             </div>
             <div className='menu-content'>
-                <MenuButton label="Fridge Leftover" onClick={props.onLeftOverRecipe}/>
+                <MenuButton label="Fridge Leftover" onClick={props.onLeftOverRecipe}/> 
                 <MenuButton label="Suprise Me" onClick={props.onSurpiseRecipe}/>
+                <MenuButton label="Saved Recipes" onClick={props.onSavedRecipe}/>
             </div>
             {props.pageState === "Searching" && (
             <div className='menu-content'>
@@ -45,7 +46,6 @@ const Menu = (props) => {
             </div>
             )}
         </div>
-       
     )
 }
 
